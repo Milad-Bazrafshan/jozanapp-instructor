@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JozanApp">
+  <defs>
+    <linearGradient id="jozan-g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#jozan-g)"/>
+  <path fill="#fff" d="M18 42V22h9.2c4.8 0 7.8 2.4 7.8 6.4 0 2.6-1.2 4.6-3.4 5.6L35 42h-6.2l-4.2-6.8H24V42H18zm6-11.4h2.8c1.8 0 2.8-.8 2.8-2.2s-1-2.2-2.8-2.2H24v4.4z"/>
+  <path fill="#fff" fill-opacity=".92" d="M38 42V22h6v16.4h8.6V42H38z"/>
+  <circle cx="48" cy="18" r="3" fill="#a5b4fc"/>
+</svg>

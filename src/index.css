@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .shell-card {
+    @apply rounded-2xl border border-white/60 bg-white/90 backdrop-blur-sm shadow-card;
+  }
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html[lang='fa'] {
+  font-family: Vazirmatn, Tahoma, sans-serif;
+}
+
+html[lang='en'] {
+  font-family: Inter, 'Segoe UI', sans-serif;
+}
+
+body {
+  @apply bg-mist-50 text-slate-800 antialiased;
+}
+
+input[type='email'],
+input[type='password'],
+input[type='url'],
+input[type='tel'],
+input[type='number'],
+input[type='time'],
+input[type='datetime-local'],
+code,
+.ltr-field {
+  direction: ltr;
+  text-align: start;
+  unicode-bidi: isolate;
+}
