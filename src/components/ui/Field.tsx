@@ -18,6 +18,7 @@ export function Field({
   onChange: (value: string) => void
   required?: boolean
   hint?: string
+  type?: string
 } & Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange' | 'type'>) {
   const { language } = useLocale()
   const isoValue = String(value)
