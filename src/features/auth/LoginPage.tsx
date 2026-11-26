@@ -8,8 +8,8 @@ import { AuthLayout } from './AuthLayout'
 
 const demoAccounts = import.meta.env.DEV
   ? [
-      { email: 'instructor@example.com', labelKey: 'auth.demoInstructor' },
-      { email: 'counselor@example.com', labelKey: 'auth.demoCounselor' },
+      { email: '0011111111', labelKey: 'auth.demoInstructor' },
+      { email: '0044444441', labelKey: 'auth.demoCounselor' },
     ]
   : []
 
@@ -18,8 +18,8 @@ export function LoginPage() {
   const auth = useAuth()
   const navigate = useNavigate()
   const [form, setForm] = useState({
-    tenantSlug: import.meta.env.DEV ? 'demo-school' : '',
-    email: import.meta.env.DEV ? 'instructor@example.com' : '',
+    tenantSlug: 'jozan',
+    email: import.meta.env.DEV ? '0011111111' : '',
     password: '',
   })
   const [error, setError] = useState('')
@@ -52,11 +52,13 @@ export function LoginPage() {
           className="ltr-field"
         />
         <Field
-          label={t('common.email')}
-          type="email"
+          label={t('auth.nationalCode')}
+          type="text"
+          inputMode="numeric"
           value={form.email}
           onChange={(email) => setForm({ ...form, email })}
           autoComplete="username"
+          className="ltr-field"
         />
         <Field
           label={t('auth.password')}

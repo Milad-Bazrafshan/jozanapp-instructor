@@ -140,6 +140,7 @@
   "auth": {
     "welcome": "خوش آمدید",
     "tenantSlug": "شناسه آموزشگاه",
+    "nationalCode": "کد ملی",
     "password": "رمز عبور",
     "signIn": "ورود به پنل",
     "signingIn": "در حال ورود…",
